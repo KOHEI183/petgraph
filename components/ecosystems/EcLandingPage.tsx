@@ -4,7 +4,7 @@
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../../styles/Home.module.css";
+import styles from "../../styles/LandingPage/Home.module.css";
 
 type Props = {};
 export const EcLandingPage: React.FC<Props> = React.memo(({}) => {

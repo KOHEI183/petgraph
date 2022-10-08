@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "bu": "next build && next export"
+    "ssg": "next build && next export -o build"
   },
   "dependencies": {
     "next": "12.3.1",
