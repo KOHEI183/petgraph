@@ -39,6 +39,7 @@ export const EcLandingPage: React.FC<Props> = React.memo(({}) => {
           </a>
           <p className={styles.description}>
             Get started by editing{" "}
+            <a href={squareSiteLink}>squareのショップリンク</a>
             <code className={styles.code}>pages/index.js</code>
           </p>
 
