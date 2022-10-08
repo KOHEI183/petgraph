@@ -5,12 +5,10 @@ import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../../styles/LandingPage/index.module.css";
+import { squareSiteLink, lineAddFriendLink } from "@/utils/const";
 
 type Props = {};
 export const EcLandingPage: React.FC<Props> = React.memo(({}) => {
-  const lineAddFriend: () => string = () => {
-    return `https://scdn.line-apps.com/n/line_add_friends/btn/ja.png`;
-  };
   return (
     <>
       <div className={styles.container}>
@@ -32,7 +30,7 @@ export const EcLandingPage: React.FC<Props> = React.memo(({}) => {
           />
           <a href="https://lin.ee/newECo6">
             <Image
-              loader={lineAddFriend}
+              loader={() => lineAddFriendLink}
               src="友だち追加"
               alt="友だち追加"
               width={300}
