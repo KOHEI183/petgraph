@@ -8,6 +8,9 @@ import styles from "../../styles/LandingPage/index.module.css";
 
 type Props = {};
 export const EcLandingPage: React.FC<Props> = React.memo(({}) => {
+  const lineAddFriend: () => string = () => {
+    return `https://scdn.line-apps.com/n/line_add_friends/btn/ja.png`;
+  };
   return (
     <>
       <div className={styles.container}>
@@ -21,7 +24,21 @@ export const EcLandingPage: React.FC<Props> = React.memo(({}) => {
           <h1 className={styles.title}>
             ペトグラフ <a href="https://nextjs.org">のLPを作成するよ</a>
           </h1>
-
+          <Image
+            src="/line/L_gainfriends_qr.svg"
+            alt="line qr size l"
+            width={200}
+            height={200}
+          />
+          <a href="https://lin.ee/newECo6">
+            <Image
+              loader={lineAddFriend}
+              src="友だち追加"
+              alt="友だち追加"
+              width={300}
+              height={40}
+            />
+          </a>
           <p className={styles.description}>
             Get started by editing{" "}
             <code className={styles.code}>pages/index.js</code>
