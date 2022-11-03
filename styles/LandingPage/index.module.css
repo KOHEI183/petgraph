@@ -1,3 +1,19 @@
+/* @media screen and (min-width: 480px) {
+  select {
+    color: #ededed;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  select {
+    color: #ededed;
+  }
+}
+@media screen and (min-width: 1024px) {
+  select {
+    color: #ededed;
+  }
+} */
+
 .container {
   padding: 0 2rem;
 }
@@ -28,9 +44,28 @@
   flex-grow: 1;
 }
 
+.title {
+  color: red;
+}
+/* .title a */
 .title a {
-  color: #0070f3;
-  text-decoration: none;
+  color: pink;
+}
+@media screen and (min-width: 480px) {
+  .title a {
+    color: pink;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+  .title a {
+    color: red;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .title a {
+    color: blue;
+  }
 }
 
 .title a:hover,
@@ -71,6 +106,7 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
+  background-color: white;
 }
 
 .card {
