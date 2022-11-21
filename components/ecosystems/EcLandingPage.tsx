@@ -29,10 +29,10 @@ export const EcLandingPage: React.FC<Props> = React.memo(({}) => {
           </h1>
           <OrSplide
             srcList={[
-              "/slider/P10102571.JPG",
-              "/slider/P10104821.JPG",
-              "/slider/P10106181.JPG",
-              "/slider/P10108731.JPG",
+              "/slider/P1010257.JPG",
+              "/slider/P1010482.JPG",
+              "/slider/P1010618.JPG",
+              "/slider/P1010873.JPG",
             ]}
           />
           <Image
