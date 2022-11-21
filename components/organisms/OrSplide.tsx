@@ -24,21 +24,16 @@ export const OrSplide: React.FC<Props> = React.memo(({ srcList }) => {
           rewind: true, // スライダーの巻き戻し
           rewindSpeed: 1000, // スライダーの巻き戻し時間
           width: 750, // アスペクト比3:2
-          breakpoints: {
-            640: {
-              width: 450,
-              height: 300,
-            },
-          },
         }}
       >
         {srcList.map((src, index) => {
           return (
             <SplideSlide key={index}>
-              <img
+              <Image
                 src={src}
                 alt={index.toString()}
-                className={styles.slideImg}
+                width={750}
+                height={500}
               />
             </SplideSlide>
           );
